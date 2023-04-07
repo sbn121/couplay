@@ -137,3 +137,65 @@ aside {
 address p {
     text-align: center;
 }
+
+.login_tbl {
+    width: 600px;
+    margin: 0 auto;
+    border: 0;
+}
+/* source order에 따른 스타일 우선순위 : 나중에 적어준 스타일이 우선함 */
+.login_tbl td {
+    border: 0;
+}
+[for=login_id], [for=login_pw] {
+    background: #bb264900;
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    text-indent: 0;
+    padding: 10px 0;
+    font-weight: bold;
+}
+#login_id, #login_pw {
+    width: 300px;
+    text-indent: 1rem;
+}
+.indent-0 {
+    text-indent: 0;
+}
+#login {
+    height: 70px;
+    background:#BB2649;
+}
+.text-center {
+    text-align: center;
+}
+.btn {
+    color: white;
+    padding: 5px 10px;
+
+}
+.round-btn {
+    border-radius: 10px;
+    background: #bb264950;
+}
+.round-btn:hover {
+    background: #BB2649;
+}
+.privacy {
+    display: none;      /*단추 클릭하면 보이게*/
+    width: 600px;
+    height: 500px;
+    position: absolute;   /*위치속성 : 절대위치*/
+    background: white;
+    box-shadow: 0 0 5px #rgba(0,0,0,.4); /*그림자, 음영*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.privacy h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 0;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Hahmlet&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/layout.css">
+    <title>커플레이</title>
+</head>
+<body>
+    <h1 class="d-none">커플레이</h1>
+    <div class="header-top">
+        <a href="login.html">로그인</a>
+        <a href="register.html">회원가입</a>
+        <a href="cart.html">장바구니</a>
+        <a href="order.html">주문조회</a>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="images/header.png" alt="커플레이">
+        </div>
+        <nav class="main-nav">
+            <ul id="gnb">
+                <!-- global navigation bar : 전역 메뉴 막대 -->
+                <li><a href="shopping.html">shopping</a></li>
+                <li><a href="sales.html">sales</a></li>
+                <li><a href="event.html">event</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="page-title">
+        <h2>login</h2>
+        <p>회원로그인</p>
+    </div>
+    <section>
+        <h2 class="d-none">회원가입 폼</h2>     
+        <!-- /*section>h2.d-none+(article>form>fieldset*2>legend.d-none)*/ -->
+        <article>
+            <h3 class="d-none">가입구분</h3>
+            <form autocomplete="off">
+                <fieldset>
+                    <legend class="d-none">회원로그인</legend>
+                    <table class="login_tbl">
+                        <caption>가입구분</caption>
+                            <tr>
+                                <td>
+                                    <label for="login_id">아이디</label>
+                                    <input required type="text" id="login_id" name="login_id">
+                                </td>
+                                <td rowspan="2" class="indent-0">
+                                    <button type="submit" id="login">로그인</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="login_pw">비밀번호</label>
+                                    <input required type="text" id="login_pw" name="login_pw">
+                                </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="text-center">
+                                <a href="id_pw_fint.html">아이디/비밀번호 찾기</a>
+                                <a href="join.html" class="btn round-btn">회원가입</a>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </article>
+    <aside>
+        <div class="aside-wrap">
+            <a href="guide.html">이용약관</a>
+            <a href="privacy.html">개인정보취급방침</a>
+            <a href="guide.html">이용안내</a>
+            <a href="cs-center.html">고객센터</a>
+        </div>
+    </aside>
+    <footer>
+        <address>
+            <p>광주광역시 서구 경열로 3, 커플레이</p>
+            <p>copyright&copy; 2017. couplay. all right reserved.</p>
+        </address>
+    </footer>
+</body>
+</html>
